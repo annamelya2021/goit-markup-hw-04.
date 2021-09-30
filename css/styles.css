@@ -1,0 +1,486 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --acsent-color: #2196f3;
+  --footer-bgcolor: #2f303a;
+  --secondary-bgcolor: #f5f4fa;
+  --background-body-color: #ffffff;
+  --address-color-link: rgba(255, 255, 255, 0.6);
+
+  /* вторичный текст цвет заголовков и навигации #212121 */
+  /*о сновной цвет текста  #757575;*/
+  /* белый #FFFFFF  */
+  /* акцент и лого #2196F3 */
+  /* цвет фона футера #2F303A */
+  /* основной цвет фона #FFFFFF */
+  /* вторичный цвет фона #F5F4FA; */
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  background-color: var(--background-body-color);
+}
+
+/* глобальный сброс маржинов по заголовкам и задание цвета*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+  color: var(--title-text-color);
+}
+/* глобальный сброс маржинов по абзацам */
+p {
+  margin: 0;
+}
+
+/* глобальный сброс маржинов по cb */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* глобальный сброс подчеркивания ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* скрытие заголовков */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* глобальный клас для ограничения ширины */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* хедер */
+
+/* размещение рамки и отступ ??? */
+.header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* задаем флекс и центрирование контейнеру */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+/* оформление логотипа Верхний и нижний логотип */
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+/* Оформление части лого цветом */
+.logo-color {
+  color: var(--acsent-color);
+}
+
+/* Оформление части лого цвето в футере */
+.logo-color-white {
+  color: var(--background-body-color);
+}
+
+.footer {
+  background-color: var(--footer-bgcolor);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*Навигационная часть*/
+/* задаем флекс и центр */
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* задаем боковые маржины кроме последнего */
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* ссылки site-nav  */
+.site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+/* выделение текущей страницы синим */
+.current {
+  color: var(--acsent-color);
+}
+
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+}
+/* соседние отступы  */
+.contacts-nav-item + .contacts-nav-item {
+  margin-left: 50px;
+}
+
+.contacts-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: currentColor;
+}
+
+/* Ховер и фокус на ссылки site-nav contacts-nav */
+.site-nav-link:hover,
+.site-nav-link:focus,
+.contacts-nav-link:hover,
+.contacts-nav-link:focus {
+  color: var(--acsent-color);
+}
+
+/* Герой */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+  background-color: var(--footer-bgcolor);
+}
+/* Заголовок героя */
+.hero-title {
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.37;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-body-color);
+}
+/* кнопка героя */
+.button {
+  width: 200px;
+  height: 50px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--background-body-color);
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--acsent-color);
+}
+/* ховер на кнопку гшроя */
+.button:hover {
+  border: 188ce8 solid 3px;
+  border-radius: 0px;
+}
+
+/* Наши преимущества ???*/
+
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* Наши преимущества список ul*/
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+/* Задаем боковую геометрию лишкам */
+.benefits-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* Заголовки преимуществ */
+.benefits-title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* описание преимуществ */
+.benefits-description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+/* не могу сделать общий класс section
+ при задании вернего падинга получается виально не правильно
+ большой отступ поэтому все секции отдельно */
+.workingplace {
+  padding-bottom: 94px;
+}
+
+/* заголовок секции чем мы занимаемся */
+.workingplace-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* список ul workingplace */
+.workingplace-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.workingplace-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px * 3) / 3);
+}
+
+/* Наша команда */
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--secondary-bgcolor);
+}
+/* Заголовки */
+.team-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+/* список ul */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+/* li */
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: var(--background-body-color);
+}
+/*  team-content div*/
+.team-content {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+
+  text-align: center;
+}
+/* имена команды */
+.team-name {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+/* Должность */
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* 2 страница Портфолио */
+
+/* Фильтры */
+/* секция  portfolio-filter*/
+.portfolio-filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* отступ к карточкам и горизонтальное расположение flex */
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* отступы между кнопками кроме последнего */
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* кнопки фильтрации фортфолио */
+.filters-button {
+  height: 38px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--secondary-bgcolor);
+}
+
+/* ховер кнопок фильтрации фортфолио  */
+.filters-button:hover,
+.filters-button:focus {
+  background-color: var(--acsent-color);
+  color: var(--background-body-color);
+}
+
+/* подсвечивание кнопки фильтрации фортфолио синим */
+.filters-button.link-current {
+  color: var(--background-body-color);
+  background-color: var(--acsent-color);
+}
+
+/* Наши работы */
+/* задаем flex и margin списку ul  */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+/* карточки портфолио */
+.portfolio-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+/* Оформление текста див в карточке потфлоние и нрижний бордер */
+.portfolio-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* Заголовки в карточках портфолио */
+.portfolio-title {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Описание в карточках портфолио */
+.portfolio-description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+/* футер */
+
+.address {
+  font-size: 14px;
+  font-style: inherit;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-body-color);
+}
+
+.footer-address {
+  margin-bottom: 9px;
+}
+.footer-logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-link {
+  color: var(--address-color-link);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--secondary-bgcolor);
+}
