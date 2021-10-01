@@ -167,8 +167,17 @@ img {
   margin-left: 50px;
 }
 
+.contacts-nav-icon-email {
+  margin-right: 10px;
+  /* fill: currentColor; */
+}
+.contacts-nav-icon-smartphone {
+  margin-right: 10px;
+  /* fill: currentColor; */
+}
 .contacts-nav-link {
   display: block;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -194,8 +203,25 @@ img {
   padding-bottom: 200px;
 
   text-align: center;
-  background-color: var(--footer-bgcolor);
 }
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-color: #3a3333; */
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* Заголовок героя */
 .hero-title {
   max-width: 696px;
@@ -237,6 +263,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /* Наши преимущества список ul*/
 .benefits-list {
   display: flex;
@@ -244,6 +271,20 @@ img {
   margin-top: -30px;
   margin-left: -30px;
 }
+
+.benefit-thumb {
+  margin-bottom: 30px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--secondary-bgcolor);
+}
+/*
+
+*/
 
 /* Задаем боковую геометрию лишкам */
 .benefits-item {
@@ -333,6 +374,8 @@ img {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   background-color: var(--background-body-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 /*  team-content div*/
 .team-content {
@@ -343,7 +386,6 @@ img {
 
   text-align: center;
 }
-/* имена команды */
 .team-name {
   margin-bottom: 10px;
 
@@ -357,6 +399,78 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-bottom: 16px;
+}
+
+.team-socials {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20;
+  margin: 0; */
+  /* outline: 1px solid black; */
+  /* list-style: none; */
+  /* text-align: center; */
+}
+
+.team-social-links {
+  /* padding: 0; */
+  display: flex;
+  justify-content: center;
+  /* margin-top: 16; */
+  /* color: white; */
+  /* background-color: rgb(255, 255, 255); */
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.team-social-icon {
+  fill: var(--primary-text-color);
+}
+
+.team-social-links:hover,
+.team-social-links:focus {
+  fill: blue;
+}
+/* имена команды */
+
+/* наши клиенты */
+.client-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+}
+.client-icon {
+  fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--acsent-color);
+  border: 1px solid var(--acsent-color);
 }
 
 /* 2 страница Портфолио */
@@ -426,6 +540,17 @@ img {
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
 }
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* Оформление текста див в карточке потфлоние и нрижний бордер */
 .portfolio-content {
   padding-top: 20px;
@@ -483,4 +608,38 @@ img {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--secondary-bgcolor);
+}
+.footer-part-one {
+  margin-right: 70px;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--background-body-color);
+}
+.footer-socials-list {
+  display: flex;
+}
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-social-icon {
+  fill: currentColor;
+}
+.footer-social-links:hover,
+.footer-social-links:focus {
+  background-color: var(--acsent-color);
 }
