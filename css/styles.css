@@ -633,37 +633,13 @@ img {
   display: block;
 }
 
-/* .client-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.client-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid var(--primary-text-color);
-  border-radius: 4px;
-}
-.client-icon {
-  fill: currentColor;
-}
-
-.client-link:hover,
-.client-link:focus {
-  color: var(--acsent-color);
-  border: 1px solid var(--acsent-color);
-} */
-
 .footer-socials-item:not(last-child) {
   margin-right: 10px;
 }
 .footer-social-links {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   color: white;
