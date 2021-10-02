@@ -167,14 +167,6 @@ img {
   margin-left: 50px;
 }
 
-.contacts-nav-icon-email {
-  margin-right: 10px;
-  /* fill: currentColor; */
-}
-.contacts-nav-icon-smartphone {
-  margin-right: 10px;
-  /* fill: currentColor; */
-}
 .contacts-nav-link {
   display: flex;
   align-items: center;
@@ -187,13 +179,21 @@ img {
   letter-spacing: 0.02em;
   color: currentColor;
 }
-
+.contacts-nav-icon-email {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contacts-nav-icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* Ховер и фокус на ссылки site-nav contacts-nav */
 .site-nav-link:hover,
 .site-nav-link:focus,
 .contacts-nav-link:hover,
 .contacts-nav-link:focus {
   color: var(--acsent-color);
+  fill: var(--acsent-color);
 }
 
 /* Герой */
@@ -593,6 +593,7 @@ img {
   margin-bottom: 9px;
 }
 .footer-logo {
+  display: block;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -612,7 +613,7 @@ img {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-part-one {
@@ -654,14 +655,17 @@ img {
 } */
 .footer-socials-list {
   display: flex;
-  /* justify-content: center; */
+}
+
+.footer-socials-item:not(last-child) {
+  margin-right: 10px;
 }
 .footer-social-links {
   display: flex;
-
+  /* justify-content: center; */
+  /* align-items: center; */
   width: 44px;
   height: 44px;
-
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
