@@ -335,7 +335,6 @@ img {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-
   background-color: var(--secondary-bgcolor);
 }
 /* Заголовки */
@@ -394,32 +393,26 @@ img {
 .team-socials {
   display: flex;
   justify-content: space-between;
-  /* padding: 20;
-  margin: 0; */
-  /* outline: 1px solid black; */
-  /* list-style: none; */
-  /* text-align: center; */
 }
 
 .team-social-links {
-  /* padding: 0; */
   display: flex;
   justify-content: center;
-  /* margin-top: 16; */
-  /* color: white; */
-  /* background-color: rgb(255, 255, 255); */
+  align-items: center;
+  color: #afb1b8;
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
 
 .team-social-icon {
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 
 .team-social-links:hover,
 .team-social-links:focus {
-  fill: blue;
+  color: var(--background-body-color);
+  background-color: var(--acsent-color);
 }
 /* имена команды */
 
@@ -427,6 +420,7 @@ img {
 .client-section {
   padding-top: 94px;
   padding-bottom: 94px;
+  /* text-align: center;*/
 }
 
 .client-title {
@@ -449,7 +443,8 @@ img {
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1px solid var(--primary-text-color);
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 .client-icon {
