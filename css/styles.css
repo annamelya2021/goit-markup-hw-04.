@@ -201,9 +201,9 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-
   text-align: center;
 }
+
 .overlay {
   height: 600px;
   max-width: 1600px;
@@ -275,8 +275,8 @@ img {
 .benefit-thumb {
   margin-bottom: 30px;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   border-radius: 4px;
